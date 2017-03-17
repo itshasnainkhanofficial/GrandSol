@@ -57,7 +57,8 @@ ancor[3].addEventListener("click",function(){
     }
 
 })
-// hide and display protfolioimg start
+// hide and display protfolioimg ended
+// header start
 var header = document.getElementsByTagName("header")[0];
 var count = 7;
 function slider(){
@@ -67,4 +68,23 @@ function slider(){
     }
 header.style.backgroundImage = "url(img/img"+count+".jpg)";
 }
-setInterval("slider()",1000);
+setInterval("slider()",2000);
+
+// header ended
+// sticky navigation start
+    jQuery(document).ready(function(){
+        var navofset  = jQuery("ul").offset().top;
+        jQuery("nav").height(jQuery("ul").outerHeight());
+        // alert(navofset);
+        jQuery(window).scroll(function(){
+            var scrol = jQuery(window).scrollTop();
+            // jQuery(".status").html(scrol);
+            if(scrol >= navofset){
+                jQuery("ul").addClass("fixed");
+            }
+            else{
+                jQuery("ul").removeClass("fixed");
+            }
+        })
+    })
+// sticky navigation ended
