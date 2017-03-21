@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+    display: flex;
+    justify-content: center;
+    background-color:lightsalmon;
+    box-shadow:-1px 8px 11px rgba(0, 0, 0, 0.22)}
+a{ 
+    display: block;
+    color:#fff;
+    background-color: lightseagreen;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+a:hover{
+    text-decoration: none;
+    color:#ccc;
+    background-color:lightcoral;
+}
