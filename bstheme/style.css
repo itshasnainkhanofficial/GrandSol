@@ -26,6 +26,7 @@ header{
    background: url("img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
    height: 920px;
    overflow: hidden;
+   width:100%;
 }
 .padding-rite{
 padding-right: 60px;
@@ -198,6 +199,46 @@ footer ul a:hover{
     color:#fdca4b;
     text-decoration: none;
 }
+
 @media (min-width: 992px){
-    
+}
+@media (min-width: 768px){
+
+}
+@media (max-width:768px){
+    header{
+        padding-top: 0px;
+        height: 1120px;
+    }
+    .padding-rite{
+padding-right: 40px;
+}
+.lg-a{
+    margin-bottom: 30px;
+    width:200px;
+}
+.headercontent h1{
+    font-size: 30px;
+    padding-top:10px;
+}
+.navbar-header button{
+    background-color: transparent;
+    border:1px solid #fff;
+    color:#fff;
+    transition: 0.3s;
+
+}
+.navbar-header button:hover{
+    background-color: #fdcb50 !important;
+    border:1px solid #fdcb50;
+}
+.storimg h1{
+    font-size: 40px;
+}
+.sec2{
+    padding-left: 0px;
+}
+.imgsec{
+    padding-right: 66px;
+}
 }
