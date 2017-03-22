@@ -43,9 +43,7 @@ padding-right: 60px;
 
 }
 .lg-a{
-    width: 235px;
     background-color: transparent;
-    padding: 15px 45px ;
     border-radius: 300px;
     font-size: 11px;
     color:#fff;
@@ -55,6 +53,8 @@ padding-right: 60px;
     display: block;
     margin-top:50px;
     transition: 0.3s;
+    width:200px;
+    text-align: center;
 }
 .lg-a:hover{
     background-color:#fdcb50;
@@ -102,14 +102,12 @@ hr{
     background-image: url("img/bg-cta.jpg");
     background-size: cover;
     background-position: center;
-    padding: 250px ;
+    padding: 250px;
 }
 
 
 .imgsec a {
-    width: 235px;
     background-color: transparent;
-    padding: 15px 45px ;
     border-radius: 300px;
     font-size: 11px;
     color:#fff;
@@ -119,8 +117,10 @@ hr{
     display: block;
     margin-top:50px;
     transition: 0.3s;
-    text-decoration: none;
+    width:200px;
     text-align: center;
+    text-decoration: none;
+    padding: 10px;
 }
 .imgsec a:hover{
         background-color:#fdcb50;
@@ -215,7 +215,6 @@ padding-right: 40px;
 }
 .lg-a{
     margin-bottom: 30px;
-    width:200px;
 }
 .headercontent h1{
     font-size: 30px;
@@ -240,5 +239,30 @@ padding-right: 40px;
 }
 .imgsec{
     padding-right: 66px;
+}
+.corret{
+    padding-left: 52px;
+}
+.feature{
+    padding-left: 52px;
+}
+.social li a{
+    width:50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1px;
+}
+.social li span{
+     transform: scale(0.5,0.5); 
+}
+.sec1 h1{
+    font-size: 36px;
+}
+.sec1{
+
+    padding: 100px 0px;
+}
+.margin-top{
+    margin-top:10px;
 }
 }
