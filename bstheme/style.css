@@ -208,6 +208,7 @@ footer ul a:hover{
 @media (max-width:768px){
     header{
         padding-top: 0px;
+        padding-left: 22px;
         height: 1120px;
     }
     .padding-rite{
@@ -238,13 +239,18 @@ padding-right: 40px;
     padding-left: 0px;
 }
 .imgsec{
-    padding-right: 66px;
+    padding-left: 112px;
+    padding-right: 0px;
 }
 .corret{
-    padding-left: 52px;
+    padding-left: 27px;
+    padding-right: 0px;
 }
 .feature{
-    padding-left: 52px;
+    padding-left: 22px;
+}
+.feature h4{
+ width:196px;   
 }
 .social li a{
     width:50px;
@@ -264,5 +270,11 @@ padding-right: 40px;
 }
 .margin-top{
     margin-top:10px;
+}
+#overlaycontent {
+    padding-left: 120px;
+}
+#overlaycontent h1{
+     font-size: 36px;
 }
 }
