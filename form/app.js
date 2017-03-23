@@ -1,22 +1,38 @@
 
-
+var nameptt = /^[a-zA-Z\s]+$/
+var emailpattrn =  /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/
 
 var submit = document.getElementById("submit");
 
 
 submit.addEventListener("click",function(){
-// var fname = document.getElementById("fname");
-// var fnameVal = fname.value;
-// var name = document.getElementById("name");
-// var  nameVal = name.value;
-// var contact = document.getElementById("contact");
-// var contactVal = contact.value;
-// var nic = document.getElementById("nic");
-// var nicVal = nic.value;
-// var email = document.getElementById("email");
-// var emailVal = email.value;
-// var password = document.getElementById("password");
-// var passVal = password.value;
+
+var contact = document.getElementById("contact");
+var contactVal = contact.value;
+var nic = document.getElementById("nic");
+var nicVal = nic.value;
+var password = document.getElementById("password");
+var passVal = password.value;
+
+// father name validation
+var fname = document.getElementById("fname");
+var fnameVal = fname.value;
+if(!nameptt.test(fnameVal)){
+    alert("write correct fathername")
+}
+// name validation
+var name = document.getElementById("name");
+var  nameVal = name.value;
+if(!nameptt.test(nameVal)){
+    alert("write correct name")
+}
+// email validation
+var email = document.getElementById("email");
+var emailVal = email.value;
+if(!emailpattrn.test(emailVal)){
+     alert("write correct email")
+}
+
 //        if(!isNaN(nameVal) ||  nameVal == ""){
 //          alert("please write correct name");
 //      }
@@ -114,8 +130,8 @@ submit.addEventListener("click",function(){
 //         console.log("False")
 //     }
 
-var matchit = /[0-9]-[0-9]-[0-9]/;
-    var a = "42101-4934240-7";
+var matchit =  /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/
+    var a = "hasnainkhankqs@gmail.com";
     if(matchit.test(a)) {
         console.log("true");
     }
@@ -123,3 +139,4 @@ var matchit = /[0-9]-[0-9]-[0-9]/;
         console.log("False")
     }
 // http://eloquentjavascript.net/09_regexp.html
+
