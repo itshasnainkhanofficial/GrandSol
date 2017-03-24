@@ -12,12 +12,10 @@ var nicpatt = /^[0-9]{5}\-[0-9]{7}\-[0-9]{1}$/;
 var contactpatt = /^\+92[0-9]{3}\-[0-9]{7}$/;
 
 // redgex pattern ended
+
+
+
 function validateForm(){
-//  password();
-//  name();
-//  fname();
-//  contact();
-//  email();
 var passwordVal = document.getElementById("password").value;
 if(passwordVal.length > 15 || passwordVal.length < 5){
     alert("password characters within 5 to 15 characters");
@@ -48,37 +46,11 @@ if(!nameptt.test(nameVal)){
     alert("write correct name");
     return false
 }
-// var male = document.getElementById("male");
-// var female = document.getElementById("female");
-// if(male.checked == false && female.checked == false){
-//     alert("please select a gender")
-//     return false
-// }
+var male = document.getElementById("male");
+var female = document.getElementById("femail");
+if((male.checked == false) && (femail.checked == false)){
+    alert("please select a gender")
+    return false
+}
 return true
 }
-
-// function password(){
-
-
-// }
-// function email(){
-
-// }
-
-// function contact(){
-
-
-// }
-// function email(){
-
-// }
-
-// function fname(){
-
-// }
-
-
-// function name(){
-
-// }
-
