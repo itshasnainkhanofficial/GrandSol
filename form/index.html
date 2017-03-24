@@ -12,7 +12,7 @@
 
 <body>
     <div class="container-fluid">
-        <form action="#" class="form-horizontal">
+        <form action="inde.html" onsubmit="return validateForm()"  method="post" class="form-horizontal">
             <div class="form-group">
                 <label for="name" class="control-label col-sm-2 col-md-2">Name:</label>
                 <div class="col-sm-10 col-md-8">
@@ -48,8 +48,8 @@
                 <div class="col-sm-10 col-md-8">
                     <input required type="password" class="form-control" id="password">
             <div class="form-group" id="radiobtn">
-                <label  class="radio-inline"><input  type="radio" name="gender"  value="male">Male</label>
-                <label  class="radio-inline"><input  type="radio" name="gender" value="femail">female</label>
+                <label  class="radio-inline"><input  type="radio" name="gender" id="male" value="male">Male</label>
+                <label  class="radio-inline"><input  type="radio" name="gender" id="femail" value="femail">female</label>
             </div>
                 </div>
             </div>
