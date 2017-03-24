@@ -118,3 +118,21 @@
 // $("button").click(function(){
 //     $("p").attr("href","www.Google.com")
 // })
+
+// to do list
+
+var ul = $("ul");
+var btn = $("button");
+$(document).ready(function(){
+
+
+
+btn.on("click",function(){
+        var input = $("input")[0].value;
+        ul.prepend("<li>"+input+"<input type='button' id='remove' value='Button'>"+"</li>")
+    })
+    var removeit = $("li button#remove").on("click",function(){
+        $(this).remove();
+    })
+
+})
