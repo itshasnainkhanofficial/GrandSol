@@ -121,18 +121,41 @@
 
 // to do list
 
-var ul = $("ul");
-var btn = $("button");
-$(document).ready(function(){
+// var ul = $("ul");
+// var btn = $("button");
+// $(document).ready(function(){
 
 
 
-btn.on("click",function(){
-        var input = $("input")[0].value;
-        ul.prepend("<li>"+input+"<input type='button' id='remove' value='Button'>"+"</li>")
-    })
-    var removeit = $("li button#remove").on("click",function(){
-        $(this).remove();
-    })
+// btn.on("click",function(){
+//         var input = $("input")[0].value;
+//         ul.prepend("<li>"+input+"<input type='button' id='remove' value='Button'>"+"</li>")
+//     })
+//     $('#remove').on("click",function(){
+//         console.log(9);
+//     })
 
+// })
+
+
+
+
+// var button = document.getElementsByTagName("input");
+// var li = document.getElementsByTagName("li");
+// var ul = document.getElementById("ul");
+// for(b = 0 ; b < button.length ; b++){
+//     button[b].addEventListener("click",function(){
+//        this.parentElement.style.display = "none";
+//     })
+// }
+
+
+// $(function(){
+//     $("#fast").on("click",function(){
+//         $("body").animate({scrollTop:10},"slow");
+//         return false;
+//     })
+// })
+$("div").on("click",function(){
+    alert(9)
 })
