@@ -200,7 +200,7 @@ p{
     margin-top:60px;
 }
 #contactimg img{
-    width: 21%;
+    width: 40px;
     height: 40px;
     border-radius: 100%;
 }
@@ -211,6 +211,10 @@ p{
 }
 .contactimg span{
     clear: both;
+}
+
+#contactimg1{
+    margin-left: 298px;
 }
 form{
     margin-top:10px;
