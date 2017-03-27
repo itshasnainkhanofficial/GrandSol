@@ -71,4 +71,5 @@ p{
     height: 100px;
     border-radius: 100%;
     background-color: red;
+    overflow: auto;
 }

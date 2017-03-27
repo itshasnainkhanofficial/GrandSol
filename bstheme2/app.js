@@ -6,6 +6,6 @@ img.addEventListener("mouseleave",function(){
     img.style.transform = "scale(1,1)";
 })
 var p = document.getElementsByTagName("p")[0];
-console.log(p);
-var a = p.scrollLeft;
-console.log(a);
+p.addEventListener("scroll",function(){
+    console.log("Hasnain")
+})

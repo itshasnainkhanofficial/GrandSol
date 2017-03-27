@@ -1,0 +1,72 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: lightslategray;
+    font-family: sans-serif;
+}
+#container{
+    text-align: center;
+    width:70%;
+    margin: auto;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-right: 150px;
+}
+#div1 h1{
+    background-color: #51bf51;
+    width:120px;
+    height: 120px;
+    color:#fff;
+    line-height: 120px;
+    text-align: center;
+    /*margin-left: 180px;*/
+    /*font-size: 30px;*/
+}
+#div1{
+    display: flex;
+    padding-left: 150px;
+}
+
+#div2,#div3,#div4{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#div2 img,#div3 img,#div4 img{
+    width:120px;
+    height: 120px;
+}
+#protfolio,#contact,#service{
+    background-color: #3a843a;
+    width:120px;
+    height: 120px;
+    color:#fff;
+    line-height: 120px;
+    text-align: center;
+}
+
+#about,#blog{
+    background-color: #51bf51;
+    width:120px;
+    height: 120px;
+    color:#fff;
+    line-height: 120px;
+    text-align: center;
+}
+#txt{
+    font-size: 8px;
+    letter-spacing: 0.1px;
+    text-align: right;
+    color:#fff;
+    margin-right: 20px;
+}
+#div4,#div3{
+    margin-top:-4px;
+}
+#div4{
+    margin-right: 120px;
+}
+#blog{
+}

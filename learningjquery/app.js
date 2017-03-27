@@ -156,6 +156,9 @@
 //         return false;
 //     })
 // })
-$("div").on("click",function(){
-    alert(9)
+$(document).scroll(function(){
+    var scrollpositioin = $(this).scrollTop();
+    if(scrollpositioin > 500 ){
+        console.log("GOt it");
+    }
 })
