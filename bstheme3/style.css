@@ -1,3 +1,4 @@
+
 .container-fluid,.row{
     margin: 0px;
     padding: 0px;
@@ -52,7 +53,7 @@
     text-decoration: none;
 }
 .navbar-fixed-top{
-    top:120px;
+    top:105px;
     background-color: transparent;
 }
 .navbar-right{
@@ -120,7 +121,7 @@
     padding: 0px;
 }
 .skills{
-    padding: 40px ;
+    padding: 48px ;
     background-color:#e3ae57;
     color:#fff;
 }
@@ -138,9 +139,9 @@
     position: relative;
     top:10px;
 }
-.img2{
-    height: 354px;
-}
+    .img2{
+        height: 370px   ;
+    }
 .row2{
     padding: 40px;
 }
@@ -148,6 +149,7 @@
     color:#e3ae57;
     font-size: 16px;
 }
+
 .row2 p{
     color:#888;
 }
@@ -162,11 +164,11 @@
 }
 .row3col1{
     background-color: #e3ae57;
-    padding:52px 22px;
+    padding:62px 22px;
 }
 .row3col2{
     background-color: #e9724c;
-    padding:52px 22px;
+    padding:62px 22px;
 }
 .row3col3{
     background-color: #161616;
@@ -180,6 +182,54 @@
 .row3col4 i{
     color:#333;
 }
+.row4img1{
+    background-image: url("img/demoimg.jpg");
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.row4{
+    background-color: #e9724c;
+}
+.row4col1 {
+    height: 400px;
+
+}
+.fa-laptop{
+    color:#fff;
+    font-size: 48px;
+}
+.media-left{
+    padding-top:20px;
+}
+.row4col2 .media{
+    color:#fff;
+}
+.row4col2{
+    padding:8px 40px;
+}
+.row4col2 small{
+    color:#633;
+    padding-left:4PX;
+}
+.row5img{
+    text-align: center;
+    background-image: url("img/demoimg.jpg");
+    height: 100%;
+    width:100%;
+    padding: 100px;
+    color:#fff;
+}
+.row5 .fa-star{
+    color:#fff;
+    font-size: 36px;
+}
+
 @media (max-width:1228px){
 .smoke{
     padding-right: 90px;
@@ -204,3 +254,34 @@
     padding:200px 0px 231px 40px;
 }
 }
+@media (max-width:425px){
+    .row5img{
+        padding: 50px;
+    }
+}
+@media(max-width:768px){
+    .skills{
+        padding: 48px;
+    }
+}
+@media (max-width: 1034px) and (min-width: 1016px){
+    .firsttxt{
+    padding:200px 0px 300px 40px;
+}
+}
+@media (max-width: 1016px) and (min-width: 964px){
+    .firsttxt{
+    padding:200px 0px 261px 40px;
+}
+}
+@media(max-width:1024px){
+    .row3col3{
+        padding: 62px 22px; 
+    }
+}
+@media (max-width: 1260px) and (min-width: 1024px){
+    .row3col3{
+        padding: 62px 22px; 
+    }
+}
+@media (min-width:)

@@ -1,3 +1,5 @@
+// for viewport https://www.sitepoint.com/scroll-based-animations-jquery-css3/
+
 // var output = document.getElementsByTagName("h3")[0];
 // var a = document.getElementsByTagName("ul")[0].innerText;
 // output.innerText = a;
@@ -158,7 +160,56 @@
 // })
 $(document).scroll(function(){
     var scrollpositioin = $(this).scrollTop();
-    if(scrollpositioin > 500 ){
-        console.log("GOt it");
+    if(scrollpositioin > 1400 ){
+        $("ul").addClass("changeit")
+        $(".img1").removeClass("imganimation");
     }
+    else{
+        $("ul").removeClass("changeit");
+        $(".img1").addClass("imganimation");
+    }
+
 })
+$(document).scroll(function(){
+    var scrollpositioin = $(this).scrollTop();
+    if(scrollpositioin > 1000 && scrollpositioin < 1400 ){
+        $("h1").addClass("big")
+    }
+    else{
+        $("h1").removeClass("big");
+    }
+
+})
+
+// var $animation_elements = $('.animation-element');
+// var $window = $(window);
+// $window.on('scroll resize', function(){
+//     var window_height = $window.height();
+//   var window_top_position = $window.scrollTop();
+//   console.log(window_height +" "+window_top_position)
+//     console.log("Hasnain")
+// });
+
+var $animateElement = $('span');
+var $window = $(window);
+function ifinview() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+
+  $.each($animateElement, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+        $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+$window.on('scroll resize', ifinview);
+$window.trigger('scroll');
