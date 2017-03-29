@@ -183,7 +183,7 @@
     color:#333;
 }
 .row4img1{
-    background-image: url("img/demoimg.jpg");
+    background-image: url("img/experience.jpg");
     background-position: 50% 50% !important;
     background-size: cover !important;
     width: 100%;
@@ -247,7 +247,15 @@
     top:0px;
 }
 }
-
+.animatetxt{
+    opacity: 0;
+    transform: translateY(220px);
+    transition: 0.5s;
+}
+.effect{
+    opacity: 1;
+    transform: translateY(0px);
+}
 
 @media (max-width: 1034px) and (min-width: 768px){
     .firsttxt{
@@ -284,4 +292,35 @@
         padding: 62px 22px; 
     }
 }
-@media (min-width:)
+@media (max-width: 992px) and (min-width: 768px){
+.skills{
+    padding: 56px;
+    /*background-color: green;*/
+}
+}
+@media(min-width:1024px){
+    .firstimg{
+    margin-top:50px;
+}
+  #div1{
+      display: none;
+     
+  }  
+  .navbar-fixed-top{
+    top:0px;
+}
+    .firsttxt{
+        padding-bottom: 330px;
+    }
+    .img1 .img-responsive,.img1 .blur{
+        height: 856px;
+    }
+    /*.row3col3,.row3col4{
+        padding-bottom: 72px;
+    }*/
+}
+@media(min-width:1440px){
+    .firsttxt{
+        padding-bottom: 369px;
+    }
+}

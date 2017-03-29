@@ -112,3 +112,16 @@ function animateimg(){
 $window.on('scroll resize', animateimg);
 
 // ended animation
+// animation on blog
+var $blog = $("#blogheading");
+function blogbig(){
+var windowsscroll = $(window).scrollTop();
+console.log(windowsscroll);
+if(windowsscroll >= 2687 && windowsscroll <= 2947 ){
+    $blog.addClass("blogheadingbig");
+}
+else{
+    $blog.removeClass("blogheadingbig");
+}
+}
+$window.on('scroll resize', blogbig);

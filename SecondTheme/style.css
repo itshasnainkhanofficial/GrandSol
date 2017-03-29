@@ -209,6 +209,7 @@ p{
     float: left;
     margin-left:160px;
 }
+
 .contactimg span{
     clear: both;
 }
@@ -332,4 +333,11 @@ nav span{
 .effect{
     opacity: 1;
     transform: translateY(0px);
+}
+#blogheading{
+    transition: 0.5s;
+}
+.blogheadingbig{
+    font-size: 90px;
+    color:#ccc;
 }
