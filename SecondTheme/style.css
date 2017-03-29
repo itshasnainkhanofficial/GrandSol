@@ -298,6 +298,7 @@ nav span{
           
         }
        nav  ul{
+    z-index: 100;
             margin-top:10px;
             float: left;
             position: relative;
@@ -314,7 +315,6 @@ nav span{
       nav  a{
 
             padding: 20px 40px ;
-            background-color:lightseagreen;
             color:#333;
             background-color: #f6f6f6;
             box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
@@ -324,3 +324,12 @@ nav span{
             position: fixed;
             top:0px;
         }
+.allimg{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+.effect{
+    opacity: 1;
+    transform: translateY(0px);
+}

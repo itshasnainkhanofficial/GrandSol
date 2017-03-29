@@ -193,18 +193,18 @@ $(document).scroll(function(){
 var $animateElement = $('span');
 var $window = $(window);
 function ifinview() {
-  var window_height = $window.height();
-  var window_top_position = $window.scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
+  var $windowheight = $window.height();
+  var $toptillscroll = $window.scrollTop();
+  var $windowbotttom = ($toptillscroll + $windowheight);
 
   $.each($animateElement, function() {
     var $element = $(this);
-    var element_height = $element.outerHeight();
-    var element_top_position = $element.offset().top;
-    var element_bottom_position = (element_top_position + element_height);
+    var $elemntheightbp = $element.outerHeight();
+    var $windowtoptillelementtop = $element.offset().top;
+    var $elementbottom = ($windowtoptillelementtop + $elemntheightbp);
 
-    if ((element_bottom_position >= window_top_position) &&
-        (element_top_position <= window_bottom_position)) {
+    if (($elementbottom >= $toptillscroll) &&
+        ($windowtoptillelementtop <= $windowbotttom)) {
         $element.addClass('in-view');
     } else {
       $element.removeClass('in-view');
@@ -212,4 +212,4 @@ function ifinview() {
   });
 }
 $window.on('scroll resize', ifinview);
-$window.trigger('scroll');
+// $window.trigger('scroll');

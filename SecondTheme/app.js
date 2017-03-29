@@ -7,7 +7,6 @@ var lastword = breakedword.shift();
 var firstword = breakedword.push(lastword);
  h1 = breakedword.join("");
 breakedword = [];
-// console.log(h1);
 document.getElementsByTagName("header")[0].getElementsByTagName("h1")[0].innerHTML = h1;
 
 } 
@@ -74,11 +73,11 @@ setInterval("slider()",2000);
 // sticky navigation start
     jQuery(document).ready(function(){
         var navofset  = jQuery("ul").offset().top;
-        jQuery("nav").height(jQuery("ul").outerHeight());
-        // alert(navofset);
-        jQuery(window).scroll(function(){
-            var scrol = jQuery(window).scrollTop();
-            // jQuery(".status").html(scrol);
+        console.log(navofset);
+        var $window = $(window);
+        $window.scroll(function(){
+            var scrol = $(this).scrollTop();
+            console.log(scrol);
             if(scrol >= navofset){
                 jQuery("ul").addClass("fixed");
             }
@@ -88,3 +87,28 @@ setInterval("slider()",2000);
         })
     })
 // sticky navigation ended
+
+// jqery started all elements will comeup with animations
+
+var $element = $(".allimg");
+var $window = $(window);
+function animateimg(){
+    var $windowheight = $window.height();
+    var $toptillscroll = $window.scrollTop();
+    var $windowbottom = ($windowheight+$toptillscroll);
+    $.each($element,function(){
+        var $thisimg = $(this);
+        var $elementheightbp = $thisimg.outerHeight();
+        var $toptillscrollelement = $thisimg.offset().top;
+        var $elementbottom = ($elementheightbp+$toptillscrollelement);
+        if(($elementbottom >= $toptillscroll)&&($toptillscrollelement <= $windowbottom)){
+           $thisimg.addClass(" effect");
+        }
+        else{
+            $thisimg.removeClass("effect");
+        }
+    })
+}
+$window.on('scroll resize', animateimg);
+
+// ended animation

@@ -54,11 +54,13 @@ span{
     display: inline-block;
     width:500px;
     height: 500px;
+    opacity: 0.2;
     background-color:sandybrown;
     transition: 2s;
 }
 .in-view{
-        width:550px;
+    width:550px;
     height: 550px;
+    opacity: 1;
     background-color: red;
 }
