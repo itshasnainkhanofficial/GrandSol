@@ -9,7 +9,7 @@
     height: 100%;
     width: 100%;
     transform: scale(1);
-    transition: 5s;
+    transition: 3s ease;
 }
 #blur{
     position: absolute;
@@ -23,6 +23,6 @@
     transform: scale(1.2);
 }*/
 .zoom{
-    /*transition: 5s;*/
+    transition: 5s;
     transform: scale(1.2);
 }

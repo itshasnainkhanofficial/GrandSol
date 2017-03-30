@@ -10,12 +10,12 @@ function slider(){
     }
     img.src = "img/slide"+count+".jpg";
     img.classList.add("zoom");
-    // console.log("class added");
+    console.log("class added");
 }
 setInterval("slider()",5000);
 function removeclass(){
     img.classList.remove("zoom");
-    // console.log("class removed");
+    console.log("class removed");
 }
 
 

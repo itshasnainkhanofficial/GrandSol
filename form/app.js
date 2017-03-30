@@ -3,6 +3,9 @@
 // http://eloquentjavascript.net/09_regexp.html
 
 
+// for passwordpattern
+// passpatt = /^([A-Z])[\w\d!@#\$%\^\&*\(\)+=._-]{10,15}$/;
+
 
 // redgex pattern started
 

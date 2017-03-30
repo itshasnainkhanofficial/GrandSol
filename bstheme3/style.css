@@ -229,7 +229,79 @@
     color:#fff;
     font-size: 36px;
 }
+/*row6*/
+.row6{
+    background-color: #e9724c;
+    padding-bottom: 0px;
+    height: 500px;
+}
+.row6backgroundimage{
+        background: url(img/demoimg.jpg);
+        background-repeat: no-repeat;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 500px;
+}
+.row6txt h1,.row6txt p{
+    color:#fff;
+}
+.contactform,.contactinfo {
+    padding: 22px 32px 22px 32px;
+}
+.contactform{
+    padding-bottom: 19px;
+}
+.contactinfo{
+    padding-top: 100px !important;
+    background-color: #161616;
+    padding-bottom: 148px;
+}
+.contactinfo h3{
+    color:#fff;
+}
+.contactinfo p a {
+    color: #e3ae57;
+}
+.row6contact{
+    margin-top: 30px;
+}
+.row6col3{
+    padding-bottom: 20px;
+}
+.inputcontrol input[type="text"],.inputcontrol input[type="email"],.inputcontrol textarea{
+        background: transparent;
+    border: none;
+    border-bottom: 1px solid #E3AE57;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    transition: all 0.4s ease-in-out;
+    color:#fff;
+}
+.inputcontrol textarea:focus,.inputcontrol textarea:active{
+    border:0px !important;
+    outline: 0px !important;
+    box-shadow: 0px !important;
+}
+input[type="submit"]{
+    background: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    color: #161616;
+    padding-bottom: 10px;
+    width:40%;
+     transition: all 0.4s ease-in-out
+}
+input[type="submit"]:hover{
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
 
+}
 @media (max-width:1228px){
 .smoke{
     padding-right: 90px;
@@ -250,13 +322,18 @@
 .animatetxt{
     opacity: 0;
     transform: translateY(220px);
-    transition: 0.5s;
+    transition: 2s;
 }
 .effect{
     opacity: 1;
     transform: translateY(0px);
 }
-
+@media (max-width:767px) {
+       footer{
+     position: relative;
+    top:1000px;
+}
+}
 @media (max-width: 1034px) and (min-width: 768px){
     .firsttxt{
     padding:200px 0px 231px 40px;
@@ -270,6 +347,15 @@
 @media(max-width:768px){
     .skills{
         padding: 48px;
+    }
+    .firstimg{
+        margin-top: 55px;
+    }
+    .row6{
+        height: 506px;
+    }
+    .contactinfo{
+        padding-bottom: 168px;
     }
 }
 @media (max-width: 1034px) and (min-width: 1016px){
@@ -319,8 +405,103 @@
         padding-bottom: 72px;
     }*/
 }
+@media (max-width:2560px) {
+    .firsttxt{
+        /*padding-bottom: 407px !important;*/
+    }
+}
 @media(min-width:1440px){
     .firsttxt{
         padding-bottom: 369px;
     }
+    .skills{
+        padding-bottom: 63px;
+    }
+    .row3col3,row3col4{
+        padding-bottom: 72px;
+    }
+    .contactinfo{
+        padding-bottom: 168px;
+    }
+}
+@media (max-width:2560px) {
+        .blur,.img1 img{
+            height: 818px;
+        }
+}
+@media (max-width:320px) {
+    .contactform{
+        padding-bottom: 0px;
+    }
+    form{
+        height: 327px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .firstimg{
+        margin-top: 55px;
+    }
+    .firsttxt{
+    padding-bottom: 85px;
+    padding-top: 112px;
+    }
+}
+@media (max-width:375px) {
+ .row6{
+     height: 526px;
+ }
+     .firstimg{
+        margin-top: 60px;
+    }
+}
+@media (max-width:425px) {
+ .row6{
+     height: 526px;
+ }
+     .firstimg{
+        margin-top: 60px;
+    }
+        .firsttxt{
+    padding-bottom: 85px;
+    padding-top: 112px;
+    }
+}
+.lastrow{
+    text-align: center;
+}
+footer{
+    padding:100px 20px;
+}
+.lastrow ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+footer a{
+    border: 2px solid transparent;
+    color: #999;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 22px 4px 10px 4px;
+    padding-top:15px;
+}
+footer a:hover{
+    background: #E3AE57;
+    border-color: #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+footer span{
+    color:#E3AE57;
 }
