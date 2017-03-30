@@ -9,8 +9,10 @@ function xyz(){
     var textareaVal  = eval(document.getElementsByTagName("textarea")[0].value);
         if(textareaVal.test(inputVal)){
         match.style.display = "block";
+        noMatch.style.display = "none";
      }
         else{
+             match.style.display = "none";
          noMatch.style.display = "block";
     }
 }
