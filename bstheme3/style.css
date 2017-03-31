@@ -182,7 +182,7 @@
 .row3col4 i{
     color:#333;
 }
-.row4img1{
+.row4img1,.newimg{
     background-image: url("img/experience.jpg");
     background-position: 50% 50% !important;
     background-size: cover !important;
@@ -192,6 +192,9 @@
     right: 0;
     bottom: 0;
     left: 0;
+}
+.newimg{
+    background-image: url("img/education-img.jpg");
 }
 .row4{
     background-color: #e9724c;
@@ -386,7 +389,7 @@ input[type="submit"]:hover{
 }
 @media(min-width:1024px){
     .firstimg{
-    margin-top:50px;
+    margin-top:0px;
 }
   #div1{
       display: none;
@@ -399,17 +402,13 @@ input[type="submit"]:hover{
         padding-bottom: 330px;
     }
     .img1 .img-responsive,.img1 .blur{
-        height: 856px;
+        height: 849px;
     }
     /*.row3col3,.row3col4{
         padding-bottom: 72px;
     }*/
 }
-@media (max-width:2560px) {
-    .firsttxt{
-        /*padding-bottom: 407px !important;*/
-    }
-}
+
 @media(min-width:1440px){
     .firsttxt{
         padding-bottom: 369px;
@@ -504,4 +503,39 @@ footer a:hover{
 }
 footer span{
     color:#E3AE57;
+}
+@media (max-width:1034px) and (min-width:1016px) {
+    .firsttxt{
+        padding-bottom: 291px;
+    }
+    .contactform{
+        padding-bottom: 0px;
+    }
+}
+@media (max-width:1023px) and (min-width:1016px) {
+    .firsttxt{
+        padding-bottom:261px;
+    }
+    .contactform{
+        padding-bottom: 0px;
+    }
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+color: #fff !important;
+  font-size: 16px;
+}
+ 
+input:-moz-placeholder,textarea::-webkit-input-placeholder { /* Firefox 18- */
+color: #fff !important;
+  font-size: 16px;  
+}
+ 
+input::-moz-placeholder ,textarea::-webkit-input-placeholder{  /* Firefox 19+ */
+color: #fff !important;
+  font-size: 16px;  
+}
+ 
+input:-ms-input-placeholder,textarea::-webkit-input-placeholder {  
+color: #fff !important;
+  font-size: 16px;  
 }
