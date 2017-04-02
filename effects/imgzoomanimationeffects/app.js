@@ -9,14 +9,13 @@ function slider(){
         count = 1;
     }
     img.src = "img/slide"+count+".jpg";
-    img.classList.add("zoom");
     console.log("class added");
 }
-setInterval("slider()",5000);
-function removeclass(){
-    img.classList.remove("zoom");
-    console.log("class removed");
-}
+setInterval("slider()",10000);
+// function removeclass(){
+//     img.classList.remove("zoom");
+//     console.log("class removed");
+// }
 
 
-setInterval("removeclass()",6000);
+// setInterval("removeclass()",6000);

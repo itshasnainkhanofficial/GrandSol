@@ -10,6 +10,7 @@
     width: 100%;
     transform: scale(1);
     transition: 3s ease;
+    animation: animateimg 10s infinite;
 }
 #blur{
     position: absolute;
@@ -19,10 +20,19 @@
     height: 100%;
     background-color:rgba(0, 0, 0, 0.2);
 }
-/*#container:hover .img{
-    transform: scale(1.2);
-}*/
-.zoom{
-    transition: 5s;
-    transform: scale(1.2);
+
+@keyframes animateimg{
+0%{
+    opacity: 0.2;
+    transform:scale(1);
+}
+50%{
+    opacity: 1;
+    transform:scale(1.2);
+}
+100%{
+    opacity: 0.2;
+    transform: scale(1);
+
+}
 }
