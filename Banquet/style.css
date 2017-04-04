@@ -4,12 +4,15 @@
 }
 
 /*Row1 started*/
-.row1{
-    padding: 15px;
+.row1{    
     background-color: #f0f0f0;
+    padding-top: 15px;
 }
 .row1 i{
     color:#fcb41e;
+}
+.row1col1,.row1col2,.row1col3{
+    margin-bottom: 15px;
 }
 .row1col1{
     text-align: right;
@@ -24,12 +27,15 @@
      align-items: center;
     padding:23px;
     background-color: #fff;
+    margin-top: -20px;
 }
-.row2col2{
-    position: relative;
+.row2col1{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
+
 #togglebtn{
-    float: right;
     display: none;
     text-align: right;
     background: #232a34;
@@ -103,6 +109,7 @@ nav ul a{
 }
 .logoimg{
     text-align: center;
+    margin-top:-30px;
 }
 .logoimg img{
     width:80px;
@@ -154,6 +161,9 @@ nav ul a{
     transform: scale(1);
 
 }
+}
+.row3{
+    margin-top:-40px;
 }
 .row3col1{
     overflow: hidden;
@@ -470,21 +480,3 @@ hr{
     margin: 0px;
 }
 
-@media (max-width:505px) and (min-width:0px) {
-.row1col1,.row1col2,.row1col3{
-    text-align: center;
-}
-.row1col2{
-    padding: 0px;
-    font-size: 11px;    
-}
-#togglebtn{
-    display: inline-block;
-    margin-top: 10px;
-}
-.row2{
-    display: flex;
-    justify-content: space-around;
-    padding-right: 72px;
-}
-}
