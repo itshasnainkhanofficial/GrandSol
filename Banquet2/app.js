@@ -1,7 +1,23 @@
 // toggle navigation
-var btn = document.getElementById("togglebtn");
-btn.addEventListener("click",function(){
-})
+
+var openmenu = document.getElementsByClassName("openmenu");
+var showit = document.getElementsByClassName("showit");
+for(var a = 0 ; a < openmenu.length ; a++){
+    openmenu[a].addEventListener("mouseenter",function(){
+        this.nextElementSibling.className += " showmenu";
+    })
+        showit[a].addEventListener("mouseenter",function(){
+        this.className += " showmenu";
+    })
+        openmenu[a].addEventListener("mouseleave",function(){
+        this.nextElementSibling.classList.remove("showmenu");
+    })
+        showit[a].addEventListener("mouseleave",function(){
+        this.classList.remove("showmenu");
+    })
+}
+
+
 
 // slider animation start
 // var img = document.getElementById("slider").style;

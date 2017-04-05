@@ -1,48 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        nav{
+            background:red;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul > li{
+            float: left;
+        }
+        ul > li > a{
+            display: inline-block;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container-fluid">
-        <!--Row 1 started-->
-        <div class="row row1">
-            <div class="col-md-3 col-sm-4 col-xs-12 row1col1">
-                info@ancorathemes.com
-            </div>
-            <div class="col-md-6 col-sm-4 col-xs-12 row1col2">
-                <i class="fa fa-clock-o"></i> Monday – Friday 8.00 am – 5.00 pm, Weekend Closed
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-12 row1col3">
-                <i class="fa fa-phone"></i> 1-800-64-38
-            </div>
-        </div>
-        <!--Row 1 ended-->
-        <!--Row 2 start-->
-        <div class="row row2">
-            <div class="col-md-3 col-sm-12 col-xs-12 row2col1">
-                <div class="logoimg">
-                    <img src="img/nica_dark.png" alt="Logo Image" class="img-responsive">
-                    <span class="logo">
-                        Event Agency
-                    </span>
-                </div>
-            </div>
-            <!--<div class="col-xs-6 col-sm-9 btndiv">
-                <button id="togglebtn">Menu <span class="fa fa-bars"></span></button>
-            </div>-->
-            <div class="col-md-9 col-sm-12 col-xs-12 row2col2">
-                <nav>
+    <nav>
                     <div id="openit">
-                        <ul class="firstul" class="paddingmarginOff">
+                        <ul id="firstul" class="paddingmarginOff">
                             <li class="openmenu"><a href="#" class="active">Home <i class="fa fa-arrow-down"></i></a></li>
                             <ul class="showit">
                                 <li><a href="#">first of first</a></li>
@@ -95,17 +76,5 @@
                         </ul>
                     </div>
                 </nav>
-            </div>
-        </div>
-        <!--Row2 ended-->
-        <!--Row3 started-->
-    </div>
-    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeWyBdbCVWRy3B3ZaEnGefEPDKea8JYhw&callback=initMap">
-
-    </script>-->
-    <script src="jquery/jquery.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="app.js"></script>
 </body>
-
 </html>

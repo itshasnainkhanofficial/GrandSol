@@ -1,4 +1,4 @@
-.container-fluid,.row,.row3,.row3col1{
+.container-fluid,.row,.paddingmarginOff{
     padding:0px;
     margin: 0px;
 }
@@ -6,71 +6,60 @@
 /*Row1 started*/
 .row1{    
     background-color: #f0f0f0;
-    padding-top: 15px;
+    padding:15px;
 }
 .row1 i{
     color:#fcb41e;
 }
 .row1col1,.row1col2,.row1col3{
-    margin-bottom: 15px;
-}
-.row1col1{
-    text-align: right;
-}
-.row1col2{
-    text-align: right;
+    text-align: center;
 }
 /*row1 ended*/
+/*Row2 started*/
+
 .row2{
     display: flex;
     align-items: center;
-   justify-content: center;
-    background-color: green;
+    background-color: #fff;
     padding: 20px;
-    padding-bottom: 10px;
+    /*background-color: red;*/
+}
+.row2col1{
+    padding: 10px;
+    /*background-color: green;*/
+}
+.logoimg{
+     display: flex;
+    align-content: center;
+    justify-content: flex-end;
 }
 .logoimg img{
-    display: inline;
-}
-.logoimg span{
-    margin-top:10px;
+    width:80px;
+    height: 30px;
     display: inline-block;
 }
-#togglebtn{
-    display: none;
-    text-align: right;
-    background: #232a34;
-    color:#fff;
-    outline: 0px;
-    border:0px;
-    padding:10px;
-    border-radius:10px;
-    width:80px;
-}
-.row2col2 #firstul{
+
+.firstul{
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    padding: 0px;
     text-align: center;
     position: relative;
 }
-
-.openmenu ul{
+.showit{
     text-align: left;
     position: absolute;
-    margin-top: 40px;
-    margin-left: -60px;
+    margin-left: -70px;
+    margin-top:35px;
     background: #272834;
     transform: translateY(50px);
     opacity: 0;
     list-style-type: none;
     z-index: 5;
     transition: 1s;
-    padding: 15px;
-    width:20%;
+    width:25%;
 }
-#firstul ul a{
+.showit a{
     text-align: left;
     font-size: 12px;
     background-color: transparent;
@@ -81,16 +70,18 @@
     width:90%;
     transition: 0.5s;
 }
-ul li ul a:hover{
+.showit a:hover{
     background-color: #73747c;
     text-decoration: none;
-
 }
-.openmenu:hover ul{
-     transform: translateY(0px);
+.showmenu{
+    transform: translateY(0px);
     opacity: 1;
- }
-#firstul>li>a{  
+}
+.btndiv{
+    display: none;
+}
+.firstul>li>a{  
     font-size: 12px;
     text-decoration: none;
     padding:5px;
@@ -99,96 +90,52 @@ ul li ul a:hover{
     width:90px;
     border-radius: 20px;
     text-align: center;
-    margin-left: 15px;
-}
-#firstul>li>a:hover{
-    background-color: #f5f5f5;
-    color:#a3a3a6;
-    text-decoration: none;
-}
-
-nav ul a{
-    text-decoration: none;
-}
-.logoimg{
-    text-align: center;
-    margin-top:-30px;
-}
-.logoimg img{
-    width:80px;
-    height: 30px;
+    margin-left: 8px;
 }
 .active{
     background-color: #fcb41e;
     color:#fff;
 }
+.firstul>li>a:hover{
+    background-color: #f5f5f5;
+    color:#a3a3a6;
+    text-decoration: none;
+}
+
+/*#togglebtn{
+    display: none;
+    text-align: right;
+    background: #232a34;
+    color:#fff;
+    outline: 0px;
+    border:0px;
+    padding:10px;
+    border-radius:10px;
+}*/
+
 /*row2 ended*/
 /*row3 started*/
 
 
 
-
-
-
-
-/*media queries*/
-@media (max-width:800px) {
-    #togglebtn{
-    display: block;
-    float: right;
-}
-.row2{
-    padding-bottom: 50px;
-}
-nav{
-    position: relative;
-    top:50px;
-    /*display: none;*/
-}
-.openmenu ul{
-    text-align: left;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: -60px;
-    background: #272834;
-    transform: translateY(50px);
-    opacity: 0;
-    list-style-type: none;
-    z-index: 5;
-    transition: 1s;
-    padding: 15px;
-    width:50%;
-}
-}
-
-@media (max-width:1000px) {
-    .row1{    
-    background-color: red; /*remove*/
-}
-#togglebtn{
-    width:70px;
-    font-size: 10px;
-}
-.row1col1,.row1col2,.row1col3{
-    text-align: center;
-}
-#firstul>li>a{  
-    font-size: 10px;
-    width:80px;
-    margin-left: 2px;
-}
-
-.logoimg{
-    padding-top: 21px;
-}
-
-}
 @media (max-width:500px) {
-    .row1{    
-    background-color: blue;  /*remove*/
+    .row1{
+        padding:5px;
+        font-size: 12px;
+        background-color:red;
+    }
 }
-.row1col2{
-    padding: 0px;
-    font-size: 12px;
-}
+
+@media (max-width:909px) {
+    .row2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logoimg{
+        justify-content: center;
+    }
+    .firstul{
+        justify-content: center;
+    }
 }
