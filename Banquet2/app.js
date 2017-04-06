@@ -46,24 +46,16 @@ function slidering(){
 setInterval("slidering()",10000);
 
 // map start
-// function initMap() {
-//         var uluru = {lat: -2.363, lng: 11.044};
-//         var map = new google.maps.Map(document.getElementById('map'), {
-//           zoom: 4,
-//           center: uluru
-//         });
-//         var marker = new google.maps.Marker({
-//           position: uluru,
-//           map: map
-//         });
-//       }
+function initMap() {
+        var uluru = {lat: -2.363, lng: 11.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
 
 
-                            /*<span>We create</span>
-                            <br/> you
-                            <br /> celebrate
-                        </div>
-                        <p>
-                            Planning a Wedding, Proposal, or Event in our busy city is not so easy,<br>and it takes skills
-                            (and time) to make it all look easy-going
-                        </p>*/
