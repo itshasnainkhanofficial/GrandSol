@@ -16,7 +16,16 @@ for(var a = 0 ; a < openmenu.length ; a++){
         this.classList.remove("showmenu");
     })
 }
-
+var row2col2 = document.getElementsByClassName("row2col2")[0];
+var togglebtn = document.getElementById("togglebtn");
+togglebtn.addEventListener("click",function(){
+    if(row2col2.style.display === "block" &&  window.innerWidth < 763+"px"){
+        row2col2.style.display = "none";
+    }
+    else if( row2col2.style.display === "none"  &&  window.innerWidth < 763+"px"){
+        row2col2.style.display = "block"
+    }
+})
 
 
 // slider animation start
@@ -59,3 +68,6 @@ function initMap() {
       }
 
 
+// var last = document.getElementById("last").addEventListener("click",function(){
+//     alert(window.innerWidth)
+// })

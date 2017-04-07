@@ -53,20 +53,6 @@
     text-align: center;
     position: relative;
 }
-.openmenu ul{
-    text-align: left;
-    position: absolute;
-    margin-top: 40px;
-    margin-left: -40px;
-    background: #272834;
-    transform: translateY(50px);
-    opacity: 0;
-    list-style-type: none;
-    z-index: -5;
-    transition: 3s;
-    padding: 15px;
-    width:20%;
-}
 ul li ul a{
     text-align: left;
     font-size: 12px;
@@ -83,11 +69,28 @@ ul li ul a:hover{
     text-decoration: none;
 
 }
+.openmenu ul{
+    text-align: left;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -40px;
+    background: #272834;
+    transform: translateY(50px);
+    opacity: 0;
+    /*display: none;*/
+    list-style-type: none;
+    /*z-index: -5;*/
+    transition: 2s;
+    padding: 15px;
+    width:20%;
+    z-index: 3;
+}
 .openmenu:hover ul{
      transform: translateY(0px);
     opacity: 1;
-    z-index: 100;
-    transition: 3s;
+    /*z-index: 100;*/
+    /*display: block;*/
+    transition: 2s;
  }
 #firstul>li>a{  
     font-size: 12px;
