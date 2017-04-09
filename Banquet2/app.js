@@ -17,20 +17,23 @@
 //     })
 // }
 var row2col2 = document.getElementsByClassName("row2col2")[0];
-row2col2.style.height = "150px";
-row2col2.style.overflow = "hidden";
-// alert(row2col2.style.display)
+row2col2.style.display = "block";
+// row2col2.style.height = "150px";
+// row2col2.style.overflow = "hidden";
 var togglebtn = document.getElementById("togglebtn");
 togglebtn.addEventListener("click",function(){
-    // if(row2col2.style.display === "block" &&  window.innerWidth < 763){
-    //     row2col2.style.display = "none";
-    // }
-    // else if( row2col2.style.display === "none"  &&  window.innerWidth < 763){
-    //     row2col2.style.display = "block";
-    // }
+    if(row2col2.style.display === "block" &&  window.innerWidth < 763){
+        row2col2.style.display = "none";
+    }
+    else {
+        row2col2.style.display = "block";
+    }
 })
-
-
+if(window.innerWidth >= 763){
+alert("hellow")
+        // row2col2.style.display = "block";
+        row2col2.style.backgroundColor = "red";
+    }
 // slider animation start
 // var img = document.getElementById("slider").style;
 // var count = 1;
