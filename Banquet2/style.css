@@ -520,10 +520,9 @@ form input[type="button"]{
 /*row13 ended*/
 /*row14 started*/
 .row15{
-        padding-right: 56px;
-    padding-left: 96px;
-    padding-bottom: 107px;
-    padding-top: 28px;
+        padding-right: 20px;
+    padding-left: 30px;
+    padding-top: 80px;
 }
 .row15,footer{
     background-color: #272530;
@@ -531,8 +530,6 @@ form input[type="button"]{
 }
 .row15col1 h1{
  font-size: 25px;
- margin-top:50px;
-  margin-bottom:50px;
    font-family: 'Montserrat';
 }
 .row15col1 img{
@@ -541,16 +538,12 @@ form input[type="button"]{
 }
 .row15col1 h2{
  font-size: 18px;
- margin-top:50px;
-  margin-bottom:30px;
 }
 .row15col1 p{
  font-size: 14px;
-  margin-bottom:50px;
   color:#676767;
 }
 .row15col2 h1{
-    margin-top:50px;
      font-family: 'Montserrat';
      font-size: 30px;
 }
@@ -571,15 +564,14 @@ form input[type="button"]{
   font-size: 10px;
 }
 .row15col3 h1,.row15col4 h1{
-     margin-top:50px;
      margin-bottom: 20px;
      font-family: 'Montserrat';
-     font-size: 30px;
+     font-size: 25px;
      
 }
 .row15col3 h4,.row15col4 h4{
        font-size: 12px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 21px;
 
     
@@ -757,9 +749,9 @@ footer ul{
 }
 
 @media (max-width:763px) {
-    .row2col2{
-        display: none;
-    }
+        /*.row2col2{
+            display: none;
+        }*/
     .row11img{
     display: none;
 }
@@ -917,4 +909,12 @@ textarea{
     margin:10% auto;
 }
 
+}
+
+#last{
+    color:#fff;
+    display: block;
+}
+#para{
+    color:#aaa;
 }
