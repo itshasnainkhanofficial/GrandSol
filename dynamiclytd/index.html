@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+                <tr>
+                    <th style="text-align: center; ">Notes</th>
+                    <th style="text-align: center; ">Qty</th>
+                    <th style="text-align: center; ">Rate</th>
+                    <th style="text-align: center; ">Amount</th>
+                    <th style="text-align: center;"><span onclick="addorder()"><i class="fa fa-plus"></i></span></th>
+                </tr>
+                </thead>
+       <tbody id="dynamictable">
+                <tr>
+                    <td>
+                    <select id="notes">
+                            <option>English</option>
+                            <option>Urdu</option>
+                            <option>Islamiat</option>
+                     </select>
+                    </td>
+                
+                    <td>
+                        <input type="input" value="12" id="qty">
+                    </td>
+                    <td>
+                        <input type="input" value="114" id="rate">
+                    </td>
+                    <td>
+                        <input type="input" value="444" id="amount">
+                    </td>
+                    <td>
+                       <span onclick="minus()" class="fa fa-minus" ></span>
+                    </td>
+                </tr>         
+                </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
