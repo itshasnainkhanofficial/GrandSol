@@ -19,6 +19,6 @@ function callingit(){
     document.getElementById("demo").innerHTML = "Ali";
   };
     workingajax.open("GET", "", true);
-  workingajax.send();
+    workingajax.send();
 }
 
