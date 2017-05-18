@@ -191,3 +191,13 @@ if (inquiry_from.valueOf() > inquiry_to.valueOf()) {
         teacher_subject_new = 'null';
         teacher_classrequire_new = 'null';
     }
+
+
+     var allinputfields = document.getElementsByTagName("input");
+ for(var i = 0 ; i < allinputfields.length ; i++){
+    //  console.log(allinputfields[i].parentElement.parentElement.parentElement.previousElementSibling.childNodes[1].innerHTML);
+     if(allinputfields[i].value == ""){
+        console.log(allinputfields[i].parentElement.parentElement.parentElement.previousElementSibling.childNodes[1].innerHTML);
+        return;
+    }
+}
