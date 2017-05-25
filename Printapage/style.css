@@ -1,0 +1,583 @@
+/*
+.card {
+     width: 100%;
+
+}
+.card .logo{
+        width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+}
+
+.card .logo .logo-img{
+        width: 50%;
+    display: table;
+    margin: 0 auto;
+
+}
+.card .logo .strip {
+    width: 92%;
+    display: table;
+    margin: 0 auto;
+}
+.card .logo .std {
+        width: 40%;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 2%;
+    float: left;
+}
+
+.card .logo .std li{
+        float: left;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+.card .logo .std li h2{
+        text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.card .logo .std img{
+        width: 48%;
+    background: #fff;
+    margin-left: 15%;
+    z-index: 1000;
+    position: inherit;
+    margin-top: 20px;
+    border: 1px solid rgba(52,73,94,0.44);
+    padding: 4px;
+    margin: 0 auto;
+    display: table;
+    margin-bottom: 3px;
+
+    margin-top: -3%;
+}
+.card .logo .std h1{
+          width: 100%;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.card .logo .field{
+        width: 50%;
+    margin: 0px auto;
+    padding: 15px;
+    float: right;
+    border-left: 1px solid;
+    margin-top: 4%;
+}
+.card .logo .field li{
+       float: left;
+    width: 100%;
+    list-style: none;
+}
+.card .logo .field li h4{
+     
+    float: left;
+    width: 50%;
+    padding: 0;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+.card .logo .field li p{
+     float: left;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: -3px;
+    width: 50%;
+    float: left;
+
+}
+.card .logo h1{
+        margin: 0 auto;
+    width: 50%;
+    font-size: 40px;
+}
+.card .logo .barcode {
+            margin: 15px auto;
+    display: table;
+    width: 65%;
+    height: 44px;
+}
+
+.card .logo .site {
+    margin: 0 auto;
+    width: 100%;
+    display: table;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-top: 0%;
+    float: left;
+}
+
+.card .logo_2 {
+        width: 50%;
+    float: right;
+} 
+.card .logo_2 .img{
+        width: 100%;
+    display: block;
+    float: left;
+    color: #000;
+    margin-bottom: 25px;
+    display: none;
+}
+.card .logo_2 .img img{
+       width: 125px;
+    margin: 0 auto;
+    float: left;
+    margin-left: 5%;
+}
+.card .logo_2 .img h1{
+        float: left;
+    font-size: 26px;
+    width: 58%;
+    text-align: justify;
+
+}
+.card .logo_2 .img h2{
+        float: left;
+    width: 60%;
+    text-align: center;
+}
+.card .logo_2 .issue_valid{
+       width: 80%;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 17px;
+    border: 1px solid #e5e5e5;
+    background: rgba(229, 229, 229, 0.51);
+    border-radius: 0 0 10px 10px;
+    border-top: 0px solid #e5e5e5;
+}
+.card .logo_2 .issue_valid li{
+        float: left;
+    width: 50%;
+    list-style: none;
+    text-align: center;  
+    margin-top: 10px;
+
+}
+.card .logo_2 .issue_valid h1{
+         font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+.card .logo_2 .issue_valid p{
+          font-weight: bold;
+    font-size: 12px;
+    margin: 2px;
+}
+.card .logo_2 h1.title{
+          width: 18%;
+    transform: rotate(270deg);
+    margin: 0 auto;
+    float: left;
+    padding: 6px;
+    margin-left: 45px;
+    margin-top: 57px;
+    background: #e5e5e5;
+    border-radius: 7px 0 0 7px;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+}
+
+.card .logo_2 .subj {
+            border: 1px solid #e5e5e5;
+    width: 89%;
+   
+    margin-left: 0;
+    margin: 0 auto;
+}
+.card .logo_2 .sub{
+        margin: 0 auto;
+    padding: 0;
+    float: left;
+    margin-left: 29%;
+    margin-top: 2%;
+    width: 80%;
+}
+.card .logo_2 .sub li{
+        list-style: none;
+    margin-bottom: 12px;
+    font-size: 18px;
+    width: 49%;
+    float: left;
+}
+
+.card .logo_2 .admission_date {
+    width: 39%;
+    margin-top: 2%;
+    float: right;
+    padding-right: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 5px;
+}
+.card .logo_2 .admission_date h3 {
+    font-size: 17px;
+    float: right;
+    margin: 0 auto;
+    margin-right: 17px;
+}
+.card .logo_2 .admission_date p {
+                float: right;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: -3px;
+}
+.card .logo_2 .terms_cond {
+        width: 100%;
+    display: table;
+    margin: 0 auto;
+    padding-left: 5%;
+    margin-left: 5px;
+    margin-top: 22px;
+    float: left;
+}
+.card .logo_2 .terms_cond h1 {
+        font-size: 20px;
+    margin-top: 7px;
+}
+.card .logo_2 .terms_cond .terms {
+      margin: 0 auto;
+    padding: 0;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+.card .logo_2 .site_2 {
+              width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    margin-top: 46.3%;
+    display: table;
+}
+
+.card .logo_2,.card .logo {
+         border: 1px solid #e5e5e5;
+    width: 90%;
+    margin: 15px auto;
+    border-radius: 16px;
+    float: left;
+}
+
+.select_row {
+    float: left;
+    width: 100%;}
+.select_row .employ_hide {
+        float: left !important;
+    width: 84% !important;
+}
+.employ_hide .filter_search {
+    margin: 0;
+    float: right;
+    margin-right: 15px;
+}
+.employ_hide .lab{
+    width: 11%;
+    float: left;
+    text-align: right;
+}
+.employ_hide .selec{
+    width: 18%;
+}
+.select_row .on_change{
+        float: right;
+    width: 16%;
+    margin: 0 auto;
+}
+.select_row .on_change .col-md-2 {
+    width: 87%;
+    border-radius: 0;
+  
+    font-size: 13px;
+    padding: 0px;
+    border-radius: 5px;
+}
+.select_row .on_change .col-md-2 .form-control {
+    width: 100%;
+    border-radius: 0;
+   
+    font-size: 13px;
+    padding: 0px;
+    border-radius: 5px;
+}
+.voucher {
+      width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+    position: relative;
+        
+}
+
+.voucher .vou{
+         margin: 0 auto;
+    padding: 0;
+    display: table;
+    width: 99%;
+   
+}
+.voucher .vou li{
+  width: 33%;
+    list-style: none;
+    border-left: 1px solid;
+    float: left;
+}
+.voucher .vou li h1{
+  float: right;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.voucher .vou li .head img{
+      float: left;
+    width: 25%;
+    margin-top: -1%;
+}
+.voucher .vou li .head h2{
+          width: 70%;
+
+    float: left;
+    margin-top: 15px;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 6px;
+}
+.voucher .vou li .head h3{
+      float: left;
+    width: 31%;
+    font-size: 17px;
+    margin-top: 2px;
+}
+.voucher .vou li .head h4{
+      font-size: 12px;
+    float: left;
+    width: 97%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    margin-top: -5px;
+}
+.voucher .vou li .line {
+        float: left;
+     
+    width: 100%;
+    display: -webkit-box;
+    border-bottom: 0px solid;
+    border-style: dotted;
+    margin-top: 6px;
+}
+.voucher .vou li .title{
+        width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+}
+.voucher .vou li .title h1{
+    width: 100%;
+    margin: 0 auto;
+    padding: 9px;
+    font-size: 20px;
+    text-align: center;
+}
+.voucher .vou li .label{
+           width: 100%;
+    display: table;
+    margin: 0 auto;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+.voucher .vou li .label .lab{
+      float: left;
+    font-size: 15px;
+    color: #73879c;
+    font-weight: 200;
+    width: 30%;
+    margin-bottom: 5px;
+}
+.voucher .vou li .label .form{
+    font-size: 17px;
+    color: #73879c;
+    width: 70%;
+    float: right;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.voucher .vou li .label .form-1,.voucher .vou li .label .form-2{
+    float: left;
+    width: 25%;
+    display: block;
+     
+    font-size: 13px;
+}
+
+.voucher .vou li .label .form-3{
+    float: left;
+    font-size: 15px;
+    color: #73879c;
+    font-weight: 200;
+    width: 70%;
+    margin-bottom: 5px;
+     
+}
+.voucher .vou li .label .form-1,.voucher .vou li .label .form-2,.voucher .vou li .label .form-3{
+    color: #73879c;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+.voucher .vou li .label .sub{
+           float: left;
+    width: 20%;
+    font-size: 13px;
+    color: #73879c;
+}
+.voucher .vou li .label .con-lab {
+        width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+.voucher .vou li .head-2 {
+        width: 100%;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+}
+.voucher .vou li .head-2 h1{
+        width: 100%;
+    background: #73879c;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+.voucher .vou li table {
+        width: 100%;
+}
+.voucher .vou li th {
+        margin-bottom: 6px;
+    padding: 9px 0;
+    text-align: center;
+}
+.voucher .vou li td {
+        margin-top: 7px;
+    text-align: center;
+}
+.voucher .vou li .area {
+        width: 100%;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+}
+.voucher .vou li .area ul{
+       width: 100%;
+    display: table;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-top: 1px solid;
+    margin-top: 6px;
+    border-bottom: 1px solid;
+}
+.voucher .vou li .area li{
+     width: 25%;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    border-left: none;
+    padding-left: 7px;
+}
+.voucher .vou li .detai {
+        width: 100%;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+}
+.voucher .vou li .detai ul {
+        width: 100%;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+}
+.voucher .vou li .detai li {
+       width: 100%;
+    padding: 6px 0;
+    margin: 0;
+}
+.voucher .vou li .detai li h1{
+        float: left;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+.voucher .vou li .detai li p{
+    float: right;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
+.voucher .vou li .detai .foot {
+    
+    margin-top: 16px;
+    border-top: 0;
+    text-align: center;
+}
+.voucher .vou li .detai .foot h1{
+    padding-bottom: 7px;
+ 
+    width: 40%;
+    margin-left: 19px;
+        border-bottom: 1px solid;
+}
+.voucher .vou li .detai .foot p{
+    padding-bottom: 2px;
+   
+    width: 40%;
+    margin-right: 19px;
+        border-bottom: 1px solid;
+}
+
+#barcode {
+font-weight: normal; 
+font-style: normal; line-height:normal; font-family:sans-serif; font-size: 12pt}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    width: 50%;
+}
+
+.voucher_for {
+    width: 25%;
+    float: left;
+}
+.voucher_for .col-md-8,.voucher_for .control-label {
+        width: 100%;
+}
+.voucher_for button{
+        margin-top: 20%;
+    margin-bottom: 0;
+}
+*/
+   
+
+.myDiv {
+    border: 1px dotted black;
+    text-align: center;
+     width: 100%;
+     }
+.myDiv {
+    border: 1px dotted pink;
+    text-align: right;
+     width: 100%;
+     }
