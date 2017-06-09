@@ -1,14 +1,17 @@
 <?php 
+include("conn.php");
 session_start();
 //  if( isset($_SESSION['name']) !="" ){
 //   header("Location: loginprofile.php");
 //  }
-$conn = mysqli_connect("localhost","root","","loginsystem");
 
-if(!$conn){
-    die("Connection Failed" . mysqli_connect_error());
+
+if($_SESSION['name']){
+    echo "<h1>You are Sign in </h1>";
 }
-
+else{
+    echo "<h1>You are Not Sign in </h1>";
+}
 
  if ( isset($_POST['signup']) ) {
    $name    = $_POST["name"];
@@ -36,7 +39,7 @@ if(!$conn){
 </head>
 <body>
 <div class="container">
-<div class="text-right"><i class="fa fa-sign-out" aria-hidden="true"></i><a href="logout.php"> Log out</a></div>
+<div class="text-right"><a href="logout.php" class="btn btn-danger"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a></div>
 <form method="POST" action="register.php" autocomplete="off">
 
     <div class="form-group text-center">
@@ -77,8 +80,8 @@ if(!$conn){
             </div>
 
             <div class="form-group">
-                <i class="fa fa-sign-in" aria-hidden="true"></i>
-             <a href="login.php">Sign in Here</a>
+               
+             <a href="login.php" class="btn btn-success"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in Here</a>
             </div>
 </form>
 

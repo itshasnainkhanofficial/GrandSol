@@ -1,18 +1,3 @@
-<?php 
-session_start();
-
-if( isset($_SESSION['name']) == ""){
-  header("Location: register.php");
- } 
-
-// session_destroy();
-// unset($_SESSION['name']);
-
-echo "You are Log in to your profile";
- echo  $_SESSION['name'] ;
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +10,58 @@ echo "You are Log in to your profile";
     <title>Document</title>
 </head>
 <body>
-    <div class="text-right"><i class="fa fa-sign-out" aria-hidden="true"></i><a href="logout.php"> Log out</a></div>
+
+    <div class="container">
+    <?php 
+include("conn.php");
+session_start();
+
+if(isset($_SESSION['name']) == ""){
+  header("Location: register.php");
+ } 
+else{
+
+echo  $_SESSION['name'] . " You are Log in to your profile";
+
+}
+?>
+            <div class="text-right"><a href="logout.php" class="btn btn-danger"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a></div>
+            <div class="form-group">
+                 
+                <a href="register.php" class="btn btn-primary"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Up Here</a>
+            </div>
+
+
+            <table class="table table-hover table-condensed table-striped table-bordered text-center">
+            <thead class="thead-inverse ">
+            <tr>
+                <th>id</th>
+                <th>User Name</th>
+                <th>Email Address</th>
+                <th colspan="2">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php 
+            include("conn.php");
+           $result =  mysqli_query($conn,"SELECT * FROM `register` ");
+             while ($row = mysqli_fetch_array($result)){            
+            ?>
+            <tr>
+                <?php $thisid = $row['id']; ?>
+                <td><?php echo $row['id']; ?></td>
+                <td><?php echo $row['username'];?></td>
+                <td><?php echo $row['email'];?></td>
+                <td><a href="edit.php?edit = <?php echo $thisid ?>">Edit</td>
+                <td><a href="delete.php?delete =<?php echo $thisid ?>">Delete</td>
+            </tr>
+             <?php
+            }
+            ?>
+            </tbody>
+            </table>
+        </div>
 
 </body>
 </html>
+         

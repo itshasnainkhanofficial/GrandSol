@@ -1,10 +1,6 @@
 <?php 
  //Start the Session
-$conn = mysqli_connect("localhost","root","","loginsystem");
-
-if(!$conn){
-    die("Connection Failed" . mysqli_connect_error());
-}
+include("conn.php");
 
 
 session_start();
@@ -22,18 +18,18 @@ $result = mysqli_query($conn, $query);
 $count = mysqli_num_rows($result);
 echo $count;
 //3.1.2 If the posted values are equal to the database values, then session will be created for the user.
-if ($count == 1){
+if ($count > 0 ){
 $_SESSION['name'] = $username;
 header("location:loginprofile.php"); 
 }else{
 //3.1.3 If the login credentials doesn't match, he will be shown with an error message.
-echo "Invalid Login Credentials.";
+echo "Invalid Login username or password.";
 }
 }
 //3.1.4 if the user is logged in Greets the user with message
 if (isset($_SESSION['username'])){
 
-$username = $_SESSION['username'];
+// $username = $_SESSION['username'];
 //   header("Location: loginprofile.php");
 }else{
     
@@ -81,12 +77,12 @@ $username = $_SESSION['username'];
 
 
             <div class="form-group">
-             <button type="submit" class="btn btn-block btn-primary" name="signin"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</button>
+             <button type="submit" class="btn btn-block btn-success" name="signin"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign In</button>
             </div>
 
             <div class="form-group">
-                <i class="fa fa-sign-in" aria-hidden="true"></i>
-             <a href="register.php">Sign Up Here</a>
+                
+             <a href="register.php" class="btn btn-primary"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Up</a>
             </div>
 </form>
 
