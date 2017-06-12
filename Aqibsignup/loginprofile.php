@@ -48,12 +48,12 @@ echo  $_SESSION['name'] . " You are Log in to your profile";
              while ($row = mysqli_fetch_array($result)){            
             ?>
             <tr>
-                <?php $thisid = $row['id']; ?>
+                
                 <td><?php echo $row['id']; ?></td>
                 <td><?php echo $row['username'];?></td>
                 <td><?php echo $row['email'];?></td>
-                <td><a href="edit.php?edit = <?php echo $thisid ?>">Edit</td>
-                <td><a href="delete.php?delete =<?php echo $thisid ?>">Delete</td>
+                <td><a href="edit.php?edit= <?php  echo $row['id']; ?>">Edit</a></td>
+                <td><a href="delete.php?delete=<?php echo $row['id']; ?>">Delete</a></td>
             </tr>
              <?php
             }

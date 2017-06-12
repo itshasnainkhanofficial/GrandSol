@@ -1,13 +1,20 @@
 
+
 <?php
-  include("conn.php");  
 session_start();
-	$delete_id   =   $_REQUEST['delete'];
+  include("conn.php");  
+
+	$delete_id   =   $_GET['delete'];
 	
 	
 	// sending query
-	mysqli_query($conn,"DELETE * FROM `register` WHERE id = '$delete_id'")
-	or die(mysqli_error());  	
+	if(mysqli_query($conn,"DELETE FROM register WHERE id = '$delete_id'")){
+		header("Location: loginprofile.php");
+	}
+	 else{ 
+		 
+		 die(mysqli_error());
+	 }  	
 	
-	header("Location: loginprofile.php");
+	
 ?> 
