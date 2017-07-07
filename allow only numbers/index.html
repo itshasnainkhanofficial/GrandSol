@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--<input type="text" onkeypress="nicPatt(this)" pattern="[0-9]+">-->
+    <input type="text"  onkeypress="return isNumber(event)" />
+
+   <script>
+    function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    else{
+        nicPatt();
+        return true;
+    }
+}
+
+
+    function nicPatt(){
+
+        var nicPatt = document.getElementsByTagName("input")[0];
+        if(nicPatt.value ){
+            
+        }
+        if(nicPatt.value.length == 5){
+            nicPatt.value += "-";
+        }
+        if(nicPatt.value.length == 13){
+            nicPatt.value += "-";
+        }
+        if(nicPatt.value.length > 14){
+            var a = nicPatt.value;
+            var b = a.substr(0, 14);
+            nicPatt.value = b;
+        }
+
+        
+    }
+    
+    </script>
+</body>
+</html>

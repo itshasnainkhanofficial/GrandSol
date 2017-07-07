@@ -9,14 +9,14 @@
 <body>
 <h1>The XMLHttpRequest Object</h1>
 
-<button type="button" onclick="callingit()">Request data</button>
+<button type="button" onclick="loadDoc()">Request data</button>
 
 <p id="demo"></p>
 
 
 
-    <script src="jquery.js"></script>
+    <!--<script src="jquery.js"></script>-->
     <script src="ajax.js"></script>
-    <script src="app.js"></script>
+    <!--<script src="app.js"></script>-->
 </body>
 </html>
